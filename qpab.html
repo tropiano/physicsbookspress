@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Books Press</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .josefin-sans-std {
+            font-family: "Josefin Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col josefin-sans-std text-gray-900">
+
+    <header class="py-6 bg-gray-800 bg-opacity-90 shadow text-white">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Physics Books Press</h1>
+            <nav>
+                <a href="./books.html" class="hover:underline mx-2">Books</a>
+                <a href="./authors.html" class="hover:underline mx-2">Authors</a>
+                <a href="mailto:antonio@physicsbookspress.com" class="hover:underline mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-5/6  mx-auto mt-10 px-4 mb-10">
+
+        <div class="flex flex-col gap-8 bg-white">
+            <div class="w-full flex flex-col md:flex-row rounded-lg overflow-hidden">
+                <div class="flex-shrink-0 flex items-start justify-start">
+                    <img src="images/book-cover-3d-narrow.png" alt="Book Cover - Quantum Physics for Absolute Beginners"
+                        class="object-contain max-w-96 w-full rounded-md m-4">
+                </div>
+                <div class="flex-1 p-6 flex flex-col justify-center">
+                    <h1 class="text-6xl  font-bold text-center mb-4">Quantum Physics for Absolute Beginners</h2>
+                        <h2 class="text-3xl font-semibold mb-4 text-center">Understand Quantum Physics and Its
+                            Real-World
+                            Applications
+                            Without Confusing
+                            Math.</h2>
+
+                        <p class="text-xl text-center  text-gray-800 mb-4">
+                            <span class="bg-green-300 text-gray-900 font-semibold px-2 py-2 rounded">
+                                Antonio Tropiano, PhD in Particle Physics
+                            </span>
+                        </p>
+
+
+                        <p class="text-gray-800 text-center text-2xl  mb-4">
+                            Ever read a book on quantum physics… and felt lost after three pages?
+                            Like it was written in a secret language for people way smarter than you?
+                            That wasn’t your fault. It was theirs.
+                            They build walls of complexity—you’re looking for doors.
+                            This book is different.
+                            It’s made for people who want to feel before they understand.
+                            For those who know there’s more to reality than what we see—and want to touch it.
+                            Quantum physics isn’t meant to be solved. It’s meant to be felt.
+                            It shakes space, time, and identity.
+                            It doesn’t follow rules. It rewrites them.
+                            And no, you don’t need formulas—just the courage to look.
+                        </p>
+                        <p class="text-xl text-center text-gray-700 leading-relaxed mt-10">
+                            Publishing Date mid-November 2025
+                        </p>
+                        <!-- Add the Amazon link here once book is out 
+                    <a href="https://www.amazon.com/dp/B0CGLW8X4Y" target="_blank"
+                        class="w-1/4 mt-4 inline-block px-6 py-2 bg-green-600 text-white text-center font-semibold rounded shadow hover:bg-green-500 transition">Buy
+                        on Amazon
+                    </a>
+                    -->
+                </div>
+            </div>
+
+            <section class="w-full rounded-lg p-6">
+                <h3 class="text-4xl font-bold mt-8 mb-4 text-center">Book Outline</h3>
+
+                <div class="flex justify-end gap-2 mb-4">
+                    <button id="expandAll" class="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-500">Expand
+                        all</button>
+                    <button id="collapseAll" class="px-3 py-2  text-gray-900 rounded hover:bg-gray-200">Collapse
+                        all</button>
+                </div>
+
+                <style>
+                    details summary svg {
+                        transition: transform .18s ease;
+                    }
+
+                    details[open] summary svg {
+                        transform: rotate(180deg);
+                    }
+                </style>
+
+                <div class="space-y-3">
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 1 — Physics at the dawn of the
+                            20th century
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">At the dawn of the 20th century, physics seemed a well established
+                            discipline.
+                            This chapter is a review of the field of Physics before the quantum revolution.
+                        </p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/"
+                                    target="_blank" rel="noopener">A fairly deep dive into Newton's laws directly from
+                                    NASA</a></li>
+                            <li><a class="text-green-600 hover:underline" href="https://theoreticalminimum.com"
+                                    target="_blank" rel="noopener">A more detailed introduction to the various subjects
+                                    that make up
+                                    classical physics - Susskind's series "The theoretical minimum".
+                                </a></li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600239"
+                                    target="_blank" rel="noopener">The principle of least action - an historical
+                                    overview.
+                                </a></li>
+                            <li><a class="text-green-600 hover:underline" href="https://arxiv.org/abs/2106.16033"
+                                    target="_blank" rel="noopener">An article that helps to understand the famous speech
+                                    by
+                                    Lord Kelvin.
+                                </a></li>
+                            <li><a class="text-green-600 hover:underline" href="content/QMtoNewtonsLaws.pdf"
+                                    target="_blank" rel="noopener">Understand how classical physics is just an
+                                    approximation of quantum physics on the macroscopic scale.
+                                </a></li>
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 2 — The Black Body Problem
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">How an apparently simple mathematical trick to model the way
+                            objects emit light, unlocks the key to understand physics at small scales.
+                        </p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline" href="https://gutenberg.org/ebooks/40030"
+                                    target="_blank" rel="noopener">Straight from the original source. Planck's book "The
+                                    theory of heat radiation".</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://physicsworld.com/a/max-planck-the-reluctant-revolutionary/"
+                                    target="_blank" rel="noopener"> Helge Kragh article
+                                    detailing the steps to Plank's discovery.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="https://www.mpg.de/19252688/max-planck"
+                                    target="_blank" rel="noopener">The Max Planck Institute keeps a page with detailed
+                                    Overview of Planck life and accomplishments.</a>
+                            </li>
+
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 3 — The photoelectric effect
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">The strange properties of the photoelectric effect, how it clashes
+                            with classical physics and the genius that solved the puzzle (of course, it's Einstein).
+                        </p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://play.google.com/books/reader?id=orp_EP-lkzoC" target="_blank"
+                                    rel="noopener">The original account of JJ Thomson discovery of the electron in his
+                                    article from 1897. From page 293.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.nobelprize.org/uploads/2017/07/lenard-lecture2.pdf"
+                                    target="_blank" rel="noopener">Lenard gave a beautiful account of the history of
+                                    cathode rays in his
+                                    Nobel Prize lecture.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="https://gutenberg.org/ebooks/73297"
+                                    target="_blank" rel="noopener">Millikan's book on the property of electrons is a
+                                    rare gem.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/einstein-photoelectric.pdf"
+                                    target="_blank" rel="noopener">Einstein's original paper on the photoelectric effect
+                                    was written in German, but luckily you can find an English translation here.</a>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 4 — Atomic models
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">The search for the internal structure of matter, how electrons
+                            orbit around the nucleus and the first quantum theory of atoms.</p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline"
+                                    href="content/Thomson-Electricity-and-Matter.pdf" target="_blank"
+                                    rel="noopener">This book by Thomson is a very clear account of both
+                                    the experiments
+                                    and the theory behind the interaction of electricity and matter.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://css.au.dk/fileadmin/reposs/reposs-010.pdf" target="_blank"
+                                    rel="noopener">Helge Kragh gives a detailed account of the theories of the atomic
+                                    structure up to and including Rutherford's atomic model in this awesome book.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.chemteam.info/Chem-History/GM-1909.html" target="_blank"
+                                    rel="noopener">Geiger-Marsden original article on their famous experiment is
+                                    reproduced here. Exceptionally clear and very interesting to read.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.chemteam.info/Chem-History/Rutherford-1914.html" target="_blank"
+                                    rel="noopener">Rutherford's article on The Structure of the Atom is reproduced
+                                    here.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="https://gutenberg.org/ebooks/72787"
+                                    target="_blank" rel="noopener">Niels Bohr's series of articles on his model of the
+                                    atom..</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.nobelprize.org/uploads/2018/06/franck-lecture.pdf" target="_blank"
+                                    rel="noopener">Franck's Nobel lecture outlining the
+                                    experiment that confirmed Bohr's theory.</a>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 5 — A new Physics
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">The introduction of wave-particle duality and the formulation of
+                            modern quantum mechanics.</p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.nobelprize.org/uploads/2016/04/broglie-lecture.pdf"
+                                    target="_blank" rel="noopener">The
+                                    account of De Broglie's hypothesis from his Nobel lecture</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/Davisson_Germer_1927.pdf"
+                                    target="_blank" rel="noopener">Davisson and Germer detailed paper on electron
+                                    diffraction. An accident that led to the Nobel prize.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/Schroedinger_1926.pdf"
+                                    target="_blank" rel="noopener">Schrödinger's original paper on wave mechanics.
+                                    A bit technical, but it contains a good amount of interesting discussion.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.youtube.com/watch?v=oVzzIkkYGY8" target="_blank" rel="noopener">A
+                                    great
+                                    video that explains Heisenberg's obscure
+                                    paper step by step. Really worth watching.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/"
+                                    target="_blank" rel="noopener">Richard Feynman Nobel lecture, entertaining
+                                    and insightful as always.</a>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 6 — Quantum Effects
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">The strange consequences of quantum mechanics and how to try to
+                            interpret them.</p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline" href="https://arxiv.org/abs/quant-ph/0312059"
+                                    target="_blank" rel="noopener">A
+                                    pretty non-technical and very clear explanation of quantum coherence.</a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://physicsworld.com/a/coherent-schrodingers-cat-still-confounds/"
+                                    target="_blank" rel="noopener">This paper highlights the difficulties of observing
+                                    macroscopical
+                                    effects of a superposition of quantum states.</a>
+                            </li>
+
+                        </ul>
+                    </details>
+
+                    <details class="bg-white rounded border p-4">
+                        <summary
+                            class="list-none flex justify-between items-center cursor-pointer text-lg font-semibold">
+                            Chapter 7 — Quantum Physics Everyday
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700">How quantum physics is fundamental for most of modern
+                            technology.</p>
+                        <h4 class="mt-3 font-semibold">Additional readings & material</h4>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><a class="text-green-600 hover:underline" href="content/electronic-band-structure.pdf"
+                                    target="_blank" rel="noopener">How do you get from the Schrödinger's equation to the
+                                    electronic band
+                                    structure in materials (with a bit of math).
+                                </a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/100_years_leds.pdf"
+                                    target="_blank" rel="noopener">Another fascinating historical article on the
+                                    discovery of LEDs.
+                                </a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/history_transistors.pdf"
+                                    target="_blank" rel="noopener">The history of the invention of the transistor and
+                                    where it will lead us.
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.chemistryexplained.com/Ru-Sp/Solar-Cells.html" target="_blank"
+                                    rel="noopener">The best written and more detailed article on the
+                                    photovoltaic effect, the principle behind solar cells.
+                                </a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline" href="content/huang-mittal-tunnel.pdf"
+                                    target="_blank" rel="noopener">The effects of quantum tunneling in the
+                                    miniaturization of transistors.
+                                </a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://www.thomaswong.net/introduction-to-classical-and-quantum-computing-1e4p.pdf"
+                                    target="_blank" rel="noopener">This free book by Thomas Wong is an excellent
+                                    introduction to classical and quantum computing.
+                                </a>
+                            </li>
+                            <li><a class="text-green-600 hover:underline"
+                                    href="https://youtu.be/RQWpF2Gb-gU?si=CS6tyHZeVhCm4Hft" target="_blank"
+                                    rel="noopener">A detailed and exhaustive explanation of how a
+                                    quantum computing algorithm works.
+                                </a>
+                            </li>
+                        </ul>
+                    </details>
+
+
+                </div>
+
+                <script>
+                    document.getElementById('expandAll').addEventListener('click', function () {
+                        document.querySelectorAll('details').forEach(d => d.open = true);
+                    });
+                    document.getElementById('collapseAll').addEventListener('click', function () {
+                        document.querySelectorAll('details').forEach(d => d.open = false);
+                    });
+                </script>
+            </section>
+        </div>
+
+        <div class="w-1/2 mt-10 bg-opacity-90 mx-auto no-underline">
+            <script async data-uid="8d44b2ed08" src="https://physics.kit.com/8d44b2ed08/index.js"></script>
+        </div>
+
+    </main>
+</body>
+
+</html>
