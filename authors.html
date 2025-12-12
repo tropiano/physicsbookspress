@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Physics Books Press - All Books</title>
+    <title>Physics Books Press - Our Authors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .josefin-sans-std {
             font-family: "Josefin Sans", sans-serif;
         }
     </style>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNFV7X96VJ"></script>
@@ -25,7 +26,6 @@
 
         gtag('config', 'G-MNFV7X96VJ');
     </script>
-
 </head>
 
 <body class="min-h-screen flex flex-col josefin-sans-std text-gray-900" style="position: relative; background-image: url('images/hero-stars.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 255, 255, 0.5);
@@ -33,13 +33,10 @@
 
     <header class="py-6 bg-gray-800 bg-opacity-90 shadow text-white">
         <div class="container mx-auto px-8 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="images/logo.png" alt="Physics Books Press Logo" class="h-8 w-8">
-                <h1 class="text-2xl font-bold">Physics Books Press</h1>
-            </div>
+            <h1 class="text-2xl font-bold">Physics Books Press</h1>
             <nav>
                 <a href="./books.html" class="hover:underline mx-2">Books</a>
-                <a href="#" class="hover:underline mx-2">Authors</a>
+                <a href="./authors.html" class="hover:underline mx-2">Authors</a>
                 <a href="mailto:antonio@physicsbookspress.com" class="hover:underline mx-2">Contact</a>
             </nav>
         </div>
@@ -56,7 +53,7 @@
                             class="object-contain max-h-80 w-full rounded-md m-4">
                     </div>
                     <div class="flex-1 p-6 flex flex-col justify-center">
-                        <h1 class="text-2xl font-bold mb-2">Quantum Physics for Absolute Beginners</h1>
+                        <h1 class="text-2xl font-bold mb-2">Antonio Tropiano, PhD in Particle Physics</h1>
                         <h2 class="text-large font-semibold mb-4">Understand Quantum Physics and Its Real-World
                             Applications
                             Without Confusing
@@ -69,11 +66,15 @@
 
                         </p>
 
-                        <a href="https://www.amazon.com/dp/B0G4DMZP7H" target="_blank" class="w-1/4 mt-4 inline-block px-6 py-2 bg-yellow-300 text-black text-center font-semibold rounded shadow 
-                        hover:bg-yellow-400 transition">Buy
+                        <p class="text-base text-gray-900 leading-relaxed mt-10">
+                            Publishing Date December 2025
+                        </p>
+                        <!-- Add the Amazon link here once book is out 
+                        <a href="https://www.amazon.com/dp/B0CGLW8X4Y" target="_blank"
+                            class="w-1/4 mt-4 inline-block px-6 py-2 bg-green-600 text-white text-center font-semibold rounded shadow hover:bg-green-500 transition">Buy
                             on Amazon
                         </a>
-
+                        -->
                     </div>
                 </div>
             </a>
